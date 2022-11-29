@@ -1,60 +1,19 @@
 {
     "author":"Daniel Mejia(@webmandman)",
-    "bugs":"",
-    "changelog":"",
-    "contributors":[],
-    "dependencies":{},
     "description":"",
-    "devDependencies":{},
-    "documentation":"",
-    "homepage":"",
-    "ignore":[
-        "**/.*",
-        "/test/",
-        "/tests/"
-    ],
-    "installPaths":{},
-    "instructions":"",
-    "keywords":"",
-    "license":[
-        {
-            "type":"",
-            "URL":""
-        }
-    ],
+    "homepage":"https://github.com/webmandman/wdm-aoc",
     "location":"ForgeboxStorage",
     "name":"Advent of Code Automation Runner",
     "private":false,
-    "projectURL":"",
     "repository":{
         "type":"",
-        "URL":""
+        "URL":"https://github.com/webmandman/wdm-aoc"
     },
     "scripts":{
         "postVersion":"publish"
     },
     "shortDescription":"Automatically retrieve your daily Advent of Code input and submit your answers.",
     "slug":"wdm-aoc",
-    "testbox":{
-        "bundles":"",
-        "directory":"tests.specs",
-        "excludes":"",
-        "labels":"",
-        "options":{},
-        "recurse":true,
-        "reporter":"",
-        "runner":[
-            {
-                "default":""
-            }
-        ],
-        "testBundles":"",
-        "testSpecs":"",
-        "testSuites":"",
-        "verbose":true,
-        "watchDelay":500,
-        "watchPaths":"**.cfc"
-    },
-    "type":"modules",
-    "version":"0.0.4"
+    "type":"commandbox-modules",
+    "version":"0.0.5"
 }
