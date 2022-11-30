@@ -15,5 +15,5 @@
     "shortDescription":"Automatically retrieve your daily Advent of Code input and submit your answers.",
     "slug":"wdm-aoc",
     "type":"commandbox-modules",
-    "version":"0.0.5"
+    "version":"0.0.6"
 }
