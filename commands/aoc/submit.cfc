@@ -3,25 +3,20 @@
 * Each day provides two puzzles/challenges, part 1 and part 2. 
 * Part 1 must be solved before part 2. 
 * .
-* The input command automates the retrieval of the puzzle's input.
-* The "input" is the data that you will need to test your code against.
+* The submit command automates the submission of the puzzle's answer.
 * Get an edge on your friends, colleagues or the world with this command.
 * .
-* By default, `aoc input` will retrieve input data and save it to the year folder.
-* For example: ./2022/day1-part1.txt
+* By default, `aoc submit <your-numeric-answer>` will submit your answer 
+* for the current day and the saved event year(year set in `aoc init`) and part 1.
 * The year is the value saved when you run `aoc init`.
 * The day is the current day of the month.
-* The part value starts with 1. Once you answer part 1, it will retrieve part 2.
+* The part value starts with 1.
 * .
-* ## Retrieve input data for any day 
-* For example: `aoc input day=8 part=2`
+* ## Submit your answer for any day 
+* For example: `aoc submit <your-answer> day=8 part=2`
 * You can also override the year value for a one time request.
-* For example: `aoc input year=2016 day=1`
+* For example: `aoc submit <your-answer> year=2016 day=1`
 * .
-* ## Overwrite File Save 
-* By default, input data is saved to the year folder.
-* You can however save it to any folder, relative to current working directory.
-* For example: `aoc input file=~/my-input.txt` 
 */
 component {
   property name="moduleSettings" inject="commandbox:moduleSettings:wdm-aoc";
@@ -31,14 +26,11 @@ component {
   * @part Numeric. 1 or 2. Default is 1.
   */ 
   function run(
-    any answer,
+    required any answer,
     numeric part=1,
     numeric day=day(now()), 
     numeric year){
 
-    systemSettings["AOC"] = {"2021"={"day1"={"part1"=true,"part2"=false}}};
-    print.line(systemSettings);
-    return;
     if( day > 25 ){
       print.redline("The last day of Advent of Code is the 25th").line();
       print.line("Use `aoc input day=15` to specify a specific day. (1-25)").line();
